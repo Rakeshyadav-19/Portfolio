@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="Source/logo.png">
+    <!-- https://www.flaticon.com/ -->
+</head>
+
+<body>
+    <nav class="nav-top">
+        <div class="nav-text"></div>
+        <div id="nav-link">
+            <a class="nav-links active" href="#About"> About</a>
+            <a class="nav-links" href="#Education"> Education</a>
+            <a class="nav-links" href="#Skills"> Skills</a>
+            <a class="nav-links" href="#Projects"> Projects</a>
+        </div>
+    </nav>
+
+    <div class="section" id="About">
+        <div class="header">About</div>
+        <div id="section-1">
+            <div class="about-1">
+                <img src="Source/me.jpg" alt="" height="380px">
+                    <p>Rakesh Yadav </p>
+                    <p>rakeshyadavry087@gmail.com </p>
+                    <p>9404899768 </p>
+            </div>
+            <div class="about-2">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi iure enim dolorum itaque animi autem odio repellat quam possimus, odit mollitia adipisci vitae corporis facere impedit dolorem laboriosam beatae ipsa!</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="section" id="Education">
+        <div class="header">Education</div>
+    </div>
+    <div class="section" id="Skills">
+        <div class="header">Skills</div>
+    </div>
+    <div class="section" id="Projects">
+        <div class="header">Projects</div>
+    </div>
+
+    <footer>
+        <div class="foot-social">
+            <a href=" https://discordapp.com/users/712290794471686195" target="_blank"> <img src="Source/discord.png"
+                    alt="" class="discord logo"></a>
+
+            <a href="https://www.linkedin.com/in/rakesh-yadav-701a051a8/" target="_blank"> <img
+                    src="Source/linkedin.png" alt="" class="linkedin logo"></a>
+
+            <a href="https://github.com/Rakeshyadav-19" target="_blank"> <img src="Source/git.png" alt=""
+                    class="git logo"></a>
+        </div>
+        <div class="btn">
+            <!-- partial:index.partial.html -->
+            <div id="contact-form" class="form-container">
+                <form id="form">
+                    <h1>Contact me</h1>
+                    <div class="form-items">
+                        <div class="form-control">
+                            <div class="button-holders">Name</div>
+                            <input type="text" name="name" autocomplete="off" />
+                        </div>
+                        <div class="form-control">
+                            <div class="button-holders">Email</div>
+                            <input type="text" name="email" autocomplete="off" />
+                        </div>
+                        <div class="form-control">
+                            <div class="button-holders">Message</div>
+                            <input type="text" name="message" autocomplete="off" />
+                        </div>
+                    </div>
+                    <button id="submit" type="submit">Send</button>
+                </form>
+                <h1 id="success-msg">Thank you for your message! We'll get back to you soon.</h1>
+            </div>
+            <!-- partial -->
+        </div>
+        <div class="foot-final">
+            Copyright © 2024 <a href="#About" title="Rakesh Yadav">Rakesh Yadav</a>. All Rights Reserved.
+        </div>
+    </footer>
+
+    <!-- Load library from the CDN -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('.nav-text', {
+            strings: ['RAKESH YADAV'],
+            typeSpeed: 150,
+            backSpeed: 150,
+            showCursor: true,
+            cursorChar: '',
+            loop: true
+        });
+    </script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
