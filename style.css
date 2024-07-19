@@ -142,7 +142,7 @@ footer{
 .foot-social{
   display: flex;
   justify-content: space-between;
-  width: 500px;
+  width: 40%;
   margin: 0 auto;
   padding: 35px;
   /* margin-bottom: 29px; */
